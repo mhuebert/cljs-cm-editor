@@ -22,9 +22,13 @@
                   :styleActiveLine true
                   #_:scrollbarStyle #_"null"
                   :theme           "solarized dark"
-                  :extraKeys       (.-subparKeymap js/window)
-                  :matchBrackets   true
+
                   :mode            "clojure"})
+
+(defn safe-set [editor value]
+  (let [cursor-pos (.getCursor editor)]
+    (.setValue editor value)
+    (.setCursor editor cursor-pos)))
 
 (defn cm-editor
   ([a] (cm-editor a {}))
@@ -40,7 +44,7 @@
                                 (.setValue editor val)
                                 (add-watch a nil (fn [_ _ _ new-state]
                                                    (if (not= new-state (.getValue editor))
-                                                     (.setValue editor (or new-state "")))))
+                                                     (safe-set editor (or new-state "")))))
                                 (.focus editor)
                                 (.on editor "change" (fn [_]
                                                        (let [value (.getValue editor)]
