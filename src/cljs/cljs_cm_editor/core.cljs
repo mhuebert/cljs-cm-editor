@@ -28,7 +28,30 @@
 (defn safe-set [editor value]
   (let [cursor-pos (.getCursor editor)]
     (.setValue editor value)
-    (.setCursor editor cursor-pos)))
+    (if (-> editor (aget "state") (aget "focused"))
+      (.setCursor editor cursor-pos))))
+
+(defn cm-editor-static
+  ([a] (cm-editor-static a {}))
+  ([a options]
+    (r/create-class
+      {:component-did-mount #(let [node (.getDOMNode %)
+                                   config (clj->js (merge cm-defaults options))
+                                   editor (.fromTextArea js/CodeMirror node config)
+                                   coerce (fn [x]
+                                            (if (string? x) x (str x)))
+                                   val (coerce @a)]
+                              (add-watch a nil (fn [_ _ _ source]
+                                                 (let [source (coerce source)]
+                                                   (if (not= source (.getValue editor))
+                                                     (.setValue editor source)))))
+                              (if (:on-click options)
+                                (.on editor "mousedown" (:on-click options)))
+                              (r/set-state % {:editor editor :a a})
+                              (.setValue editor val))
+
+       :reagent-render      (fn []
+                              [:textarea {:style {:width "100%" :height "100%" :display "flex" :background "red" :flex 1}}])})))
 
 (defn cm-editor
   ([a] (cm-editor a {}))
@@ -45,10 +68,12 @@
                                 (add-watch a nil (fn [_ _ _ new-state]
                                                    (if (not= new-state (.getValue editor))
                                                      (safe-set editor (or new-state "")))))
-                                (.focus editor)
+                                (if (= true (:focus options)) (.focus editor))
                                 (.on editor "change" (fn [_]
                                                        (let [value (.getValue editor)]
                                                          (reset! a value))))
+                                (if (:on-click options)
+                                  (.on editor "mousedown" (:on-click options)))
                                 (.on editor "focus"
                                      (fn [_] (reset! editor-currently-focused id)))
 
@@ -63,7 +88,8 @@
                                 (.off editor))
 
       :reagent-render         (fn []
-                                [:textarea {:style {:width "100%" :height "100%" :display "flex" :background "red" :flex 1}}])})))
+                                [:textarea {:style {:width "100%" :height "100%" :display "flex" :background "red" :flex 1}
+                                            }])})))
 
 
 
