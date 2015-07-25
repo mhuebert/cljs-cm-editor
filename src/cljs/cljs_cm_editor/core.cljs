@@ -1,5 +1,9 @@
 (ns cljs-cm-editor.core
-    (:require [reagent.core :as r :refer [cursor]]))
+    (:require [reagent.core :as r :refer [cursor]]
+              [CodeMirror]
+              [CodeMirror-simple]
+              [CodeMirror-overlay]
+              #_[CodeMirror-deref]))
 
 (defonce editor-index (r/atom {}))
 (defonce editor-currently-focused (r/atom nil))
@@ -68,18 +72,17 @@
                                 (add-watch a nil (fn [_ _ _ new-state]
                                                    (if (not= new-state (.getValue editor))
                                                      (safe-set editor (or new-state "")))))
-                                (if (= true (:focus options)) (.focus editor))
                                 (.on editor "change" (fn [_]
                                                        (let [value (.getValue editor)]
                                                          (reset! a value))))
-                                (if (:on-click options)
-                                  (.on editor "mousedown" (:on-click options)))
+
                                 (.on editor "focus"
                                      (fn [_] (reset! editor-currently-focused id)))
 
                                 (if-not (empty? (:click-coords options))
                                   (let [[x y] (:click-coords options)
                                         pos (.coordsChar editor (clj->js {:left x :top y}))]
+                                    (.focus editor)
                                     (.setCursor editor pos)
                                     )))
 
@@ -94,6 +97,8 @@
 
 
 (defn ^:export main []
-  (let [content (r/atom "Editor content")]
-    (r/render [cm-editor content]
+  (let [content (r/atom "(+ 1 2 @3)")]
+    (r/render [:div {:style {:margin 30}}
+               [cm-editor content {:mode  "clojureDeref"
+                                   :theme :3024-day}]]
               (.getElementById js/document "app"))))

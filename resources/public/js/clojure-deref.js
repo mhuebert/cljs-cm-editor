@@ -1,8 +1,8 @@
 
 CodeMirror.defineSimpleMode("derefOverlay", {
   start: [
-    {regex: /@[^@\s(){}\[\]]+/, token: "deref"},
-    {regex: /[^@]+/, token: null}
+    {regex: /@\d/, token: "deref", next: "start"},
+    {regex: /[^@]*/, token: null}
   ]
 });
 

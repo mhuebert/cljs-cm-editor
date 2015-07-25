@@ -6,7 +6,7 @@
            {:file "codemirror/overlay.js"
             :provides ["CodeMirror-overlay"]
             :requires ["CodeMirror"]}
-           #_{:file "codemirror/clojure-deref.js"
+           {:file "codemirror/clojure-deref.js"
             :provides ["CodeMirror-deref"]
             :requires ["CodeMirror" "CodeMirror-overlay" "CodeMirror-simple"]}
            {:file "codemirror/subpar-with-keymap.js"

@@ -15,8 +15,7 @@
 
                         :figwheel {:on-jsload "cljs-cm-editor.core/main"}
 
-                        :compiler {:main cljs-cm-editor.core
-                                   :output-to "resources/public/js/compiled/app.js"
+                        :compiler {:output-to "resources/public/js/compiled/app.js"
                                    :output-dir "resources/public/js/compiled/out"
                                    :asset-path "js/compiled/out"
                                    :source-map-timestamp true}}

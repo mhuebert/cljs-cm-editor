@@ -1,0 +1,499 @@
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.084 seconds.[0m
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+java.lang.AssertionError: Assert failed: (symbol? sym)
+ at cljs.analyzer.api$find_ns.invoke (api.clj:93)
+    figwheel_sidecar.core$all_ns_to_load$fn__17065.invoke (core.clj:292)
+    clojure.core$keep$fn__6835.invoke (core.clj:7048)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$concat$fn__4215.invoke (core.clj:691)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$reduce1.invoke (core.clj:903)
+    clojure.core$set.invoke (core.clj:3960)
+    figwheel_sidecar.core$all_ns_to_load.invoke (core.clj:292)
+    figwheel_sidecar.core$expand_to_all_ns.invoke (core.clj:299)
+    figwheel_sidecar.core$notify_cljs_ns_changes.invoke (core.clj:334)
+    figwheel_sidecar.core$check_for_changes.invoke (core.clj:356)
+    figwheel_sidecar.auto_builder$check_changes.invoke (auto_builder.clj:42)
+    clojure.core$partial$fn__4527.invoke (core.clj:2493)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:64)
+    clojurescript_build.auto$error$fn__17392.invoke (auto.clj:71)
+    clojurescript_build.auto$before$fn__17386.invoke (auto.clj:60)
+    clojurescript_build.auto$make_conditional_builder$fn__17404.invoke (auto.clj:103)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__17490$state_machine__9141__auto____17491$fn__17496.invoke (auto.clj:186)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.131 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /cljs_cm_editor/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.14 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /cljs_cm_editor/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.12 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /cljs_cm_editor/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.139 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /cljs_cm_editor/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.065 seconds.[0m
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+java.lang.AssertionError: Assert failed: (symbol? sym)
+ at cljs.analyzer.api$find_ns.invoke (api.clj:93)
+    figwheel_sidecar.core$all_ns_to_load$fn__17065.invoke (core.clj:292)
+    clojure.core$keep$fn__6835.invoke (core.clj:7048)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$concat$fn__4215.invoke (core.clj:691)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$reduce1.invoke (core.clj:903)
+    clojure.core$set.invoke (core.clj:3960)
+    figwheel_sidecar.core$all_ns_to_load.invoke (core.clj:292)
+    figwheel_sidecar.core$expand_to_all_ns.invoke (core.clj:299)
+    figwheel_sidecar.core$notify_cljs_ns_changes.invoke (core.clj:334)
+    figwheel_sidecar.core$check_for_changes.invoke (core.clj:356)
+    figwheel_sidecar.auto_builder$check_changes.invoke (auto_builder.clj:42)
+    clojure.core$partial$fn__4527.invoke (core.clj:2493)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:64)
+    clojurescript_build.auto$error$fn__17392.invoke (auto.clj:71)
+    clojurescript_build.auto$before$fn__17386.invoke (auto.clj:60)
+    clojurescript_build.auto$make_conditional_builder$fn__17404.invoke (auto.clj:103)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__17490$state_machine__9141__auto____17491$fn__17496.invoke (auto.clj:186)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src/cljs/cljs_cm_editor/core.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__3057.invoke (compiler.cljc:1146)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1109)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1181)
+    cljs.closure$compile_dir.invoke (closure.clj:385)
+    cljs.closure$eval3465$fn__3466.invoke (closure.clj:425)
+    cljs.closure$eval3418$fn__3419$G__3409__3426.invoke (closure.clj:331)
+    cljs.closure$eval3478$fn__3479.invoke (closure.clj:439)
+    cljs.closure$eval3418$fn__3419$G__3409__3426.invoke (closure.clj:331)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:19)
+    clojure.core$map$fn__4553.invoke (core.clj:2622)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$apply.invoke (core.clj:630)
+    clojure.core$mapcat.doInvoke (core.clj:2660)
+    clojure.lang.RestFn.invoke (RestFn.java:423)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1476)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:153)
+    figwheel_sidecar.auto_builder$default_build_options$fn__17590.invoke (auto_builder.clj:77)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__17623.invoke (auto_builder.clj:179)
+    figwheel_sidecar.auto_builder$warning$fn__17587.invoke (auto_builder.clj:73)
+    clojurescript_build.auto$time_build$fn__17383.invoke (auto.clj:55)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:64)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:64)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:64)
+    clojurescript_build.auto$error$fn__17392.invoke (auto.clj:71)
+    clojurescript_build.auto$before$fn__17386.invoke (auto.clj:60)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.115 seconds.[0m
+notifying browser that file changed:  /cljs_cm_editor/core.js
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.11 seconds.[0m
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+java.lang.AssertionError: Assert failed: (symbol? sym)
+ at cljs.analyzer.api$find_ns.invoke (api.clj:93)
+    figwheel_sidecar.core$all_ns_to_load$fn__17065.invoke (core.clj:292)
+    clojure.core$keep$fn__6835.invoke (core.clj:7048)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$concat$fn__4215.invoke (core.clj:691)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$reduce1.invoke (core.clj:903)
+    clojure.core$set.invoke (core.clj:3960)
+    figwheel_sidecar.core$all_ns_to_load.invoke (core.clj:292)
+    figwheel_sidecar.core$expand_to_all_ns.invoke (core.clj:299)
+    figwheel_sidecar.core$notify_cljs_ns_changes.invoke (core.clj:334)
+    figwheel_sidecar.core$check_for_changes.invoke (core.clj:356)
+    figwheel_sidecar.auto_builder$check_changes.invoke (auto_builder.clj:42)
+    clojure.core$partial$fn__4527.invoke (core.clj:2493)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:64)
+    clojurescript_build.auto$error$fn__17392.invoke (auto.clj:71)
+    clojurescript_build.auto$before$fn__17386.invoke (auto.clj:60)
+    clojurescript_build.auto$make_conditional_builder$fn__17404.invoke (auto.clj:103)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__17490$state_machine__9141__auto____17491$fn__17496.invoke (auto.clj:186)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.164 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /cljs_cm_editor/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.136 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /cljs_cm_editor/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.128 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /cljs_cm_editor/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.123 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /cljs_cm_editor/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.137 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /cljs_cm_editor/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.139 seconds.[0m
+notifying browser that file changed:  /cljs_cm_editor/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.127 seconds.[0m
+notifying browser that file changed:  /cljs_cm_editor/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.125 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /cljs_cm_editor/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.124 seconds.[0m
+notifying browser that file changed:  /cljs_cm_editor/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.124 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /cljs_cm_editor/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.148 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /cljs_cm_editor/core.js
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.117 seconds.[0m
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+java.lang.AssertionError: Assert failed: (symbol? sym)
+ at cljs.analyzer.api$find_ns.invoke (api.clj:93)
+    figwheel_sidecar.core$all_ns_to_load$fn__17065.invoke (core.clj:292)
+    clojure.core$keep$fn__6835.invoke (core.clj:7048)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$concat$fn__4215.invoke (core.clj:691)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$reduce1.invoke (core.clj:903)
+    clojure.core$set.invoke (core.clj:3960)
+    figwheel_sidecar.core$all_ns_to_load.invoke (core.clj:292)
+    figwheel_sidecar.core$expand_to_all_ns.invoke (core.clj:299)
+    figwheel_sidecar.core$notify_cljs_ns_changes.invoke (core.clj:334)
+    figwheel_sidecar.core$check_for_changes.invoke (core.clj:356)
+    figwheel_sidecar.auto_builder$check_changes.invoke (auto_builder.clj:42)
+    clojure.core$partial$fn__4527.invoke (core.clj:2493)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:64)
+    clojurescript_build.auto$error$fn__17392.invoke (auto.clj:71)
+    clojurescript_build.auto$before$fn__17386.invoke (auto.clj:60)
+    clojurescript_build.auto$make_conditional_builder$fn__17404.invoke (auto.clj:103)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__17490$state_machine__9141__auto____17491$fn__17496.invoke (auto.clj:186)
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.134 seconds.[0m
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+java.lang.AssertionError: Assert failed: (symbol? sym)
+ at cljs.analyzer.api$find_ns.invoke (api.clj:93)
+    figwheel_sidecar.core$all_ns_to_load$fn__17065.invoke (core.clj:292)
+    clojure.core$keep$fn__6835.invoke (core.clj:7048)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$concat$fn__4215.invoke (core.clj:691)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$reduce1.invoke (core.clj:903)
+    clojure.core$set.invoke (core.clj:3960)
+    figwheel_sidecar.core$all_ns_to_load.invoke (core.clj:292)
+    figwheel_sidecar.core$expand_to_all_ns.invoke (core.clj:299)
+    figwheel_sidecar.core$notify_cljs_ns_changes.invoke (core.clj:334)
+    figwheel_sidecar.core$check_for_changes.invoke (core.clj:356)
+    figwheel_sidecar.auto_builder$check_changes.invoke (auto_builder.clj:42)
+    clojure.core$partial$fn__4527.invoke (core.clj:2493)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:64)
+    clojurescript_build.auto$error$fn__17392.invoke (auto.clj:71)
+    clojurescript_build.auto$before$fn__17386.invoke (auto.clj:60)
+    clojurescript_build.auto$make_conditional_builder$fn__17404.invoke (auto.clj:103)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__17490$state_machine__9141__auto____17491$fn__17496.invoke (auto.clj:186)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.126 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /cljs_cm_editor/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.122 seconds.[0m
+notifying browser that file changed:  /cljs_cm_editor/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.135 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /cljs_cm_editor/core.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.127 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /cljs_cm_editor/core.js
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.095 seconds.[0m
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+java.lang.AssertionError: Assert failed: (symbol? sym)
+ at cljs.analyzer.api$find_ns.invoke (api.clj:93)
+    figwheel_sidecar.core$all_ns_to_load$fn__17065.invoke (core.clj:292)
+    clojure.core$keep$fn__6835.invoke (core.clj:7048)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$concat$fn__4215.invoke (core.clj:691)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$reduce1.invoke (core.clj:903)
+    clojure.core$set.invoke (core.clj:3960)
+    figwheel_sidecar.core$all_ns_to_load.invoke (core.clj:292)
+    figwheel_sidecar.core$expand_to_all_ns.invoke (core.clj:299)
+    figwheel_sidecar.core$notify_cljs_ns_changes.invoke (core.clj:334)
+    figwheel_sidecar.core$check_for_changes.invoke (core.clj:356)
+    figwheel_sidecar.auto_builder$check_changes.invoke (auto_builder.clj:42)
+    clojure.core$partial$fn__4527.invoke (core.clj:2493)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:64)
+    clojurescript_build.auto$error$fn__17392.invoke (auto.clj:71)
+    clojurescript_build.auto$before$fn__17386.invoke (auto.clj:60)
+    clojurescript_build.auto$make_conditional_builder$fn__17404.invoke (auto.clj:103)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__17490$state_machine__9141__auto____17491$fn__17496.invoke (auto.clj:186)
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.103 seconds.[0m
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+java.lang.AssertionError: Assert failed: (symbol? sym)
+ at cljs.analyzer.api$find_ns.invoke (api.clj:93)
+    figwheel_sidecar.core$all_ns_to_load$fn__17065.invoke (core.clj:292)
+    clojure.core$keep$fn__6835.invoke (core.clj:7048)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$concat$fn__4215.invoke (core.clj:691)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$reduce1.invoke (core.clj:903)
+    clojure.core$set.invoke (core.clj:3960)
+    figwheel_sidecar.core$all_ns_to_load.invoke (core.clj:292)
+    figwheel_sidecar.core$expand_to_all_ns.invoke (core.clj:299)
+    figwheel_sidecar.core$notify_cljs_ns_changes.invoke (core.clj:334)
+    figwheel_sidecar.core$check_for_changes.invoke (core.clj:356)
+    figwheel_sidecar.auto_builder$check_changes.invoke (auto_builder.clj:42)
+    clojure.core$partial$fn__4527.invoke (core.clj:2493)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:64)
+    clojurescript_build.auto$error$fn__17392.invoke (auto.clj:71)
+    clojurescript_build.auto$before$fn__17386.invoke (auto.clj:60)
+    clojurescript_build.auto$make_conditional_builder$fn__17404.invoke (auto.clj:103)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__17490$state_machine__9141__auto____17491$fn__17496.invoke (auto.clj:186)
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.119 seconds.[0m
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+java.lang.AssertionError: Assert failed: (symbol? sym)
+ at cljs.analyzer.api$find_ns.invoke (api.clj:93)
+    figwheel_sidecar.core$all_ns_to_load$fn__17065.invoke (core.clj:292)
+    clojure.core$keep$fn__6835.invoke (core.clj:7048)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$concat$fn__4215.invoke (core.clj:691)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$reduce1.invoke (core.clj:903)
+    clojure.core$set.invoke (core.clj:3960)
+    figwheel_sidecar.core$all_ns_to_load.invoke (core.clj:292)
+    figwheel_sidecar.core$expand_to_all_ns.invoke (core.clj:299)
+    figwheel_sidecar.core$notify_cljs_ns_changes.invoke (core.clj:334)
+    figwheel_sidecar.core$check_for_changes.invoke (core.clj:356)
+    figwheel_sidecar.auto_builder$check_changes.invoke (auto_builder.clj:42)
+    clojure.core$partial$fn__4527.invoke (core.clj:2493)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:64)
+    clojurescript_build.auto$error$fn__17392.invoke (auto.clj:71)
+    clojurescript_build.auto$before$fn__17386.invoke (auto.clj:60)
+    clojurescript_build.auto$make_conditional_builder$fn__17404.invoke (auto.clj:103)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__17490$state_machine__9141__auto____17491$fn__17496.invoke (auto.clj:186)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.08 seconds.[0m
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+java.lang.AssertionError: Assert failed: (symbol? sym)
+ at cljs.analyzer.api$find_ns.invoke (api.clj:93)
+    figwheel_sidecar.core$all_ns_to_load$fn__17065.invoke (core.clj:292)
+    clojure.core$keep$fn__6835.invoke (core.clj:7048)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$concat$fn__4215.invoke (core.clj:691)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$reduce1.invoke (core.clj:903)
+    clojure.core$set.invoke (core.clj:3960)
+    figwheel_sidecar.core$all_ns_to_load.invoke (core.clj:292)
+    figwheel_sidecar.core$expand_to_all_ns.invoke (core.clj:299)
+    figwheel_sidecar.core$notify_cljs_ns_changes.invoke (core.clj:334)
+    figwheel_sidecar.core$check_for_changes.invoke (core.clj:356)
+    figwheel_sidecar.auto_builder$check_changes.invoke (auto_builder.clj:42)
+    clojure.core$partial$fn__4527.invoke (core.clj:2493)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:64)
+    clojurescript_build.auto$error$fn__17392.invoke (auto.clj:71)
+    clojurescript_build.auto$before$fn__17386.invoke (auto.clj:60)
+    clojurescript_build.auto$make_conditional_builder$fn__17404.invoke (auto.clj:103)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__17490$state_machine__9141__auto____17491$fn__17496.invoke (auto.clj:186)
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.118 seconds.[0m
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+java.lang.AssertionError: Assert failed: (symbol? sym)
+ at cljs.analyzer.api$find_ns.invoke (api.clj:93)
+    figwheel_sidecar.core$all_ns_to_load$fn__17065.invoke (core.clj:292)
+    clojure.core$keep$fn__6835.invoke (core.clj:7048)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$concat$fn__4215.invoke (core.clj:691)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$reduce1.invoke (core.clj:903)
+    clojure.core$set.invoke (core.clj:3960)
+    figwheel_sidecar.core$all_ns_to_load.invoke (core.clj:292)
+    figwheel_sidecar.core$expand_to_all_ns.invoke (core.clj:299)
+    figwheel_sidecar.core$notify_cljs_ns_changes.invoke (core.clj:334)
+    figwheel_sidecar.core$check_for_changes.invoke (core.clj:356)
+    figwheel_sidecar.auto_builder$check_changes.invoke (auto_builder.clj:42)
+    clojure.core$partial$fn__4527.invoke (core.clj:2493)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:64)
+    clojurescript_build.auto$error$fn__17392.invoke (auto.clj:71)
+    clojurescript_build.auto$before$fn__17386.invoke (auto.clj:60)
+    clojurescript_build.auto$make_conditional_builder$fn__17404.invoke (auto.clj:103)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__17490$state_machine__9141__auto____17491$fn__17496.invoke (auto.clj:186)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.125 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/app.js
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  /cljs_cm_editor/core.js
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.095 seconds.[0m
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+java.lang.AssertionError: Assert failed: (symbol? sym)
+ at cljs.analyzer.api$find_ns.invoke (api.clj:93)
+    figwheel_sidecar.core$all_ns_to_load$fn__17065.invoke (core.clj:292)
+    clojure.core$keep$fn__6835.invoke (core.clj:7048)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$concat$fn__4215.invoke (core.clj:691)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$reduce1.invoke (core.clj:903)
+    clojure.core$set.invoke (core.clj:3960)
+    figwheel_sidecar.core$all_ns_to_load.invoke (core.clj:292)
+    figwheel_sidecar.core$expand_to_all_ns.invoke (core.clj:299)
+    figwheel_sidecar.core$notify_cljs_ns_changes.invoke (core.clj:334)
+    figwheel_sidecar.core$check_for_changes.invoke (core.clj:356)
+    figwheel_sidecar.auto_builder$check_changes.invoke (auto_builder.clj:42)
+    clojure.core$partial$fn__4527.invoke (core.clj:2493)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__17389.invoke (auto.clj:64)
+    clojurescript_build.auto$error$fn__17392.invoke (auto.clj:71)
+    clojurescript_build.auto$before$fn__17386.invoke (auto.clj:60)
+    clojurescript_build.auto$make_conditional_builder$fn__17404.invoke (auto.clj:103)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__17490$state_machine__9141__auto____17491$fn__17496.invoke (auto.clj:186)
