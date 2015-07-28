@@ -36,7 +36,7 @@
       (.setCursor editor cursor-pos))))
 
 (defn coerce [s]
-  (if (string? x) x (str x)))
+  (if (string? s) s (str s)))
 
 (defn cm-editor-static
   ([a] (cm-editor-static a {}))
