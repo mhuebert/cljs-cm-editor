@@ -35,6 +35,9 @@
     (if (-> editor (aget "state") (aget "focused"))
       (.setCursor editor cursor-pos))))
 
+(defn coerce [s]
+  (if (string? x) x (str x)))
+
 (defn cm-editor-static
   ([a] (cm-editor-static a {}))
   ([a options]
@@ -42,8 +45,6 @@
       {:component-did-mount #(let [node (.getDOMNode %)
                                    config (clj->js (merge cm-defaults options))
                                    editor (.fromTextArea js/CodeMirror node config)
-                                   coerce (fn [x]
-                                            (if (string? x) x (str x)))
                                    val (coerce @a)]
                               (add-watch a nil (fn [_ _ _ source]
                                                  (let [source (coerce source)]
@@ -57,6 +58,8 @@
        :reagent-render      (fn []
                               [:textarea {:style {:width "100%" :height "100%" :display "flex" :background "red" :flex 1}}])})))
 
+
+
 (defn cm-editor
   ([a] (cm-editor a {}))
   ([a options]
@@ -64,14 +67,14 @@
      {:component-did-mount    #(let [node (.getDOMNode %)
                                      config (clj->js (merge cm-defaults options))
                                      editor (.fromTextArea js/CodeMirror node config)
-                                     val (or @a "")
+                                     val (coerce @a)
                                      id (or (:id options) (+ 1 (count @editor-index)))]
                                 (r/set-state % {:editor editor :id id :a a})
                                 (swap! editor-index merge {id %})
                                 (.setValue editor val)
                                 (add-watch a nil (fn [_ _ _ new-state]
                                                    (if (not= new-state (.getValue editor))
-                                                     (safe-set editor (or new-state "")))))
+                                                     (safe-set editor (coerce new-state)))))
                                 (.on editor "change" (fn [_]
                                                        (let [value (.getValue editor)]
                                                          (reset! a value))))
@@ -83,8 +86,7 @@
                                   (let [[x y] (:click-coords options)
                                         pos (.coordsChar editor (clj->js {:left x :top y}))]
                                     (.focus editor)
-                                    (.setCursor editor pos)
-                                    )))
+                                    (.setCursor editor pos))))
 
       :component-will-unmount #(let [{:keys [id editor]} (r/state %)]
                                 (swap! editor-index dissoc id)
