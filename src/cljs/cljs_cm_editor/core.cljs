@@ -72,9 +72,9 @@
                                 (r/set-state % {:editor editor :id id :a a})
                                 (swap! editor-index merge {id %})
                                 (.setValue editor val)
-                                (add-watch a nil (fn [_ _ _ new-state]
-                                                   (if (not= new-state (.getValue editor))
-                                                     (safe-set editor (coerce new-state)))))
+                                (add-watch a nil (fn [_ _ _ source]
+                                                   (if (not= source (.getValue editor))
+                                                     (safe-set editor (coerce source)))))
                                 (.on editor "change" (fn [_]
                                                        (let [value (.getValue editor)]
                                                          (reset! a value))))
